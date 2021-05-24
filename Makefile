@@ -26,8 +26,10 @@ PROJECT := terraform-module-template
 
 PYTHON_VERSION=3.8.0
 NODE_VERSION=14.15.5
+TERRAFORM_VERSION=0.15.4
 PYENV_NAME="${PROJECT}"
-GIT_IGNORES:=python,node,go,zsh
+GIT_IGNORES:=python,node,go,terraform
+GIT_IGNORES_CUSTOM:= bin 
 GI:=gi
 
 # issues reviewers
@@ -42,6 +44,7 @@ SOURCE_DIR=$(ROOT_DIR)
 PROVISION_DIR:=$(ROOT_DIR)/provision
 DOCS_DIR:=$(ROOT_DIR)/docs
 README_TEMPLATE:=$(PROVISION_DIR)/templates/README.tpl.md
+TERRAFORM_README_FILE := docs/include/terraform.md
 
 export README_FILE ?= README.md
 export README_YAML ?= provision/generators/README.yaml
@@ -69,6 +72,7 @@ help:
 ## Create README.md by building it from README.yaml
 .PHONY: readme
 readme:
+	@make terraform.docs
 	@gomplate --file $(README_TEMPLATE) \
 		--out $(README_FILE)
 
@@ -81,6 +85,7 @@ setup:
 	@[ -e ".env" ] || cp -rf .env.example .env
 	make yarn.setup
 	make git.setup
+	make go.setup
 	@echo ${MESSAGE_HAPPY}
 
 ## setup environment of project
