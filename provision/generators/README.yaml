@@ -64,6 +64,11 @@ description: |-
     agr 'terraform-module-template' 'new-project'
   ```
 
+  ```hcl
+    module "main" {
+    }
+  ```
+
   Full working examples can be found in [examples](./examples) folder.
 
 examples:
