@@ -5,7 +5,15 @@
 #
 
 # Name of this project
-name: base-template
+name: terraform-module-template
+
+# Tags of this project
+tags:
+  - template
+
+# Categories of this project
+categories:
+  - terraform-modules
 
 email:
   support: luis.mayta@inetum.world
@@ -22,22 +30,22 @@ copyrights:
 license: 'LGPL-3.0'
 
 # Canonical GitHub repo
-github_repo: inetum-peru/base-template
+github_repo: inetum-peru/terraform-module-template
 
 # Badges to display
 badges:
   - name: GitHub tag (latest SemVer)
-    image: https://img.shields.io/github/v/tag/inetum-peru/base-template?label=latest&sort=semver
-    url: https://github.com/inetum-peru/base-template/releases
+    image: https://img.shields.io/github/v/tag/inetum-peru/terraform-module-template?label=latest&sort=semver
+    url: https://github.com/inetum-peru/terraform-module-template/releases
   - name: Latest Release
-    image: https://img.shields.io/github/release/inetum-peru/base-template
-    url: https://github.com/inetum-peru/base-template/releases
+    image: https://img.shields.io/github/release/inetum-peru/terraform-module-template
+    url: https://github.com/inetum-peru/terraform-module-template/releases
   - name: Lint
-    image: https://img.shields.io/github/workflow/status/inetum-peru/base-template/lint-code
-    url: https://github.com/inetum-peru/base-template/actions
+    image: https://img.shields.io/github/workflow/status/inetum-peru/terraform-module-template/lint-code
+    url: https://github.com/inetum-peru/terraform-module-template/actions
   - name: Issues
-    image: https://img.shields.io/github/issues/inetum-peru/base-template
-    url: https://github.com/inetum-peru/base-template/issues
+    image: https://img.shields.io/github/issues/inetum-peru/terraform-module-template
+    url: https://github.com/inetum-peru/terraform-module-template/issues
   - name: Conventional Commits
     image: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow
     url: https://conventionalcommits.org
@@ -48,10 +56,19 @@ badges:
 # Short description of this project
 description: |-
 
-  base-template for project
+  terraform-module-template for project
 
   ### Replace name project to New Project
 
   ```bash
-    agr 'base-template' 'new-project'
+    agr 'terraform-module-template' 'new-project'
   ```
+
+  Full working examples can be found in [examples](./examples) folder.
+
+examples:
+  - 'docs/examples/common.md'
+
+include:
+  - 'docs/include/targets.md'
+  - 'docs/include/terraform.md'
