@@ -24,11 +24,59 @@ terraform-module-template for project
   agr 'terraform-module-template' 'new-project'
 ```
 
+```hcl
+  module "main" {
+  }
+```
+
 Full working examples can be found in [examples](./examples) folder.
 
 ## Examples
 
 ### common
+
+ <!-- BEGIN_TF_DOCS -->
+
+## Requirements
+
+| Name                                                                     | Version |
+| ------------------------------------------------------------------------ | ------- |
+| <a name="requirement_terraform"></a> [terraform](#requirement_terraform) | >= 0.13 |
+
+## Providers
+
+| Name                                             | Version |
+| ------------------------------------------------ | ------- |
+| <a name="provider_aws"></a> [aws](#provider_aws) | n/a     |
+
+## Modules
+
+| Name                                            | Source              | Version |
+| ----------------------------------------------- | ------------------- | ------- |
+| <a name="module_tags"></a> [tags](#module_tags) | hadenlabs/tags/null | 0.1.1   |
+
+## Resources
+
+| Name | Type |
+| --- | --- |
+| [aws_eip.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eip) | resource |
+| [aws_instance.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance) | resource |
+| [aws_internet_gateway.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/internet_gateway) | resource |
+| [aws_key_pair.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/key_pair) | resource |
+| [aws_route.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route) | resource |
+| [aws_security_group.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group) | resource |
+| [aws_subnet.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/subnet) | resource |
+| [aws_vpc.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc) | resource |
+
+## Inputs
+
+No inputs.
+
+## Outputs
+
+No outputs.
+
+<!-- END_TF_DOCS -->
 
 ## Help
 
