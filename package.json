@@ -1,7 +1,7 @@
 {
-  "name": "@inetum-peru/base-template",
+  "name": "@inetum-peru/terraform-module-template",
   "version": "0.0.0",
-  "description": "base-template",
+  "description": "terraform-module-template",
   "author": "Luis Mayta <slovacus@gmail.com>",
   "license": "LGPL-3.0",
   "engines": {
@@ -39,7 +39,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/inetum-peru/base-template.git"
+    "url": "git+https://github.com/inetum-peru/terraform-module-template.git"
   },
   "keywords": [
     "hadenlabs",
@@ -48,9 +48,9 @@
     "tool"
   ],
   "bugs": {
-    "url": "https://github.com/inetum-peru/base-template/issues"
+    "url": "https://github.com/inetum-peru/terraform-module-template/issues"
   },
-  "homepage": "https://github.com/inetum-peru/base-template#readme",
+  "homepage": "https://github.com/inetum-peru/terraform-module-template#readme",
   "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
